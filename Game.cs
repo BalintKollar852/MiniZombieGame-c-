@@ -20,9 +20,12 @@ public class Game : Node2D
     private int hp = 100;
     private int gold;
     private int maxammo = 150;
-    private bool weaponuse = true;
+    public bool weaponuse = true;
     public override void _Ready()
     {
+
+
+
         Random random = new Random();
         Node2D heal = (Node2D)psHeal.Instance();
         heal.Position = new Vector2(random.Next(200, 400), random.Next(0, 200));

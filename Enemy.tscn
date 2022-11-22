@@ -129,3 +129,4 @@ percent_visible = false
 [connection signal="body_entered" from="EnemyBody/Attack" to="." method="_on_Attack_body_entered"]
 [connection signal="body_exited" from="EnemyBody/Attack" to="." method="_on_Attack_body_exited"]
 [connection signal="area_entered" from="EnemyBody/AreaShape" to="." method="_on_AreaShape_area_entered"]
+[connection signal="area_exited" from="EnemyBody/AreaShape" to="." method="_on_AreaShape_area_exited"]

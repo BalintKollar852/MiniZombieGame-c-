@@ -16,7 +16,9 @@ public class Character : Node2D
     public override void _Process(float delta)
     {
         var alak = GetNode("KinematicBody2D") as KinematicBody2D;
+        var knifearea = GetNode("KinematicBody2D/KnifeArea") as Area2D;
         alak.LookAt(GetGlobalMousePosition());
+        knifearea.LookAt(GetGlobalMousePosition());
 
         Move.x = 0;
         Move.y = 0;
